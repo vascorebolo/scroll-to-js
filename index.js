@@ -1,12 +1,18 @@
-module.exports = (element, to, duration) => {
-  let difference = to - element.scrollTop
-  let perTick = difference / duration * 10
+class Scroller {
+  constructor(target, time) {
+  }
 
-  setTimeout(() => {
-    element.scrollTop = element.scrollTop + perTick
+  smoothScroll() {
+    let start = new Date().getTime()
 
-    if (element.scrollTop === to) return
+    let timer = setInterval(() => {
+      let step = Math.min(1, (new Date().getTime() - start) / this.time)
 
-    scrollTo(element, to, duration - 10)
-  }, 10)
+      document.body['scrollTop'] = step * this.target.offsetTop
+
+      if (step === 1) clearInterval(timer)
+    }, 25)
+  }
 }
+
+module.exports = new Scroller()
