@@ -1,8 +1,8 @@
-module.exports = (element, to, duration) => {
-  let difference = to - element.scrollTop
-  let perTick = difference / duration * 10
+module.exports = function(element, to, duration) {
+  var difference = to - element.scrollTop
+  var perTick = difference / duration * 10
 
-  setTimeout(() => {
+  setTimeout(function() {
     element.scrollTop = element.scrollTop + perTick
 
     if (element.scrollTop === to) return
