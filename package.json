@@ -1,6 +1,6 @@
 {
   "name": "scroll-to-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simpler scroller of pure js",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "author": "Pedro Brás",
   "license": "ISC",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/pedromrb/scroll-to-js.git"
+    "type": "git",
+    "url": "https://github.com/pedromrb/scroll-to-js.git"
   }
 }
