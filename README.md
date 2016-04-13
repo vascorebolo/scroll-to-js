@@ -6,7 +6,7 @@ It's a simple function using promises to get the same effect as jQuery's animate
 ## Usage
 The arguments are (element, target, duration), target it can be a number or the element's offset to top, usually i use this kind of functions to scroll the body
 
- ###### Just require it
+###### Just require it
  ```javascript
  let scroller = require('scroll-to-js')
  ```
